@@ -10,8 +10,8 @@ apt install git
 apt install unzip
 
 #configure git
-sudo -u ubuntu git config --global credential.helper '!aws codecommit credential-helper $@'
-sudo -u ubuntu git config --global credential.UseHttpPath true
+# sudo -u ubuntu git config --global credential.helper '!aws codecommit credential-helper $@'
+# sudo -u ubuntu git config --global credential.UseHttpPath true
 
 
 #build the dot net service
