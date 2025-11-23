@@ -35,7 +35,7 @@ Environment=DOTNET_CLI_HOME=/temp
 WantedBy=multi-user.target
 EOL
 
-systemctl daemon-reload
+sudo systemctl daemon-reload
 
 #run it
-systemctl start srv-02
+sudo systemctl start srv-02
