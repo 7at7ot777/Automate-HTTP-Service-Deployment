@@ -9,22 +9,10 @@ echo "install git"
 apt install git
 apt install unzip
 
-#install aws cli
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip -qq awscliv2.zip
-./aws/install
-aws --version
-
 #configure git
 sudo -u ubuntu git config --global credential.helper '!aws codecommit credential-helper $@'
 sudo -u ubuntu git config --global credential.UseHttpPath true
 
-
-#clone repo from code commit
-cd /home/ubuntu
-echo "git clone"
-sudo -u ubuntu git clone https://git-codecommit.eu-north-1.amazonaws.com/v1/repos/srv-02
-cd srv-02
 
 #build the dot net service
 echo "dotnet build"
